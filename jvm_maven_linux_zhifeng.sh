@@ -12,7 +12,8 @@ if ! command -v java &> /dev/null; then
   sudo update-alternatives --install /usr/bin/javac javac ${JAVA_HOME%*/}/bin/javac 20000
 fi
 
-if ! command -v mvn &> /dev/null; then
+mvn_path=$(command -v mvn)
+if ! $mvn_path &> /dev/null; then
   wget https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.tar.gz -P ./
   sudo tar xf ./apache-maven-*.tar.gz -C $HOME
   sudo ln -s $HOME/apache-maven-3.8.3 $HOME/maven
@@ -21,7 +22,8 @@ if ! command -v mvn &> /dev/null; then
   sudo cp maven.sh /etc/profile.d/maven.sh
   sudo chmod +x /etc/profile.d/maven.sh
   source /etc/profile.d/maven.sh
-
 fi
+
+echo You have successfully installed:
 mvn --version
 
