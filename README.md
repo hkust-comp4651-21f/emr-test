@@ -1,4 +1,6 @@
-# Notes beyond the Lab Slides
+# Notes beyond the Slides of Lab5: AWS EMR
+
+Please feel free to open an issue here or email TA [Zhifeng JIANG](zjiangaj@cse.ust.hk) for any related questions on this lab.
 
 ### 1. Install Maven
 
