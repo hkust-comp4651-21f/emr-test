@@ -4,7 +4,7 @@ Please feel free to open an issue here or email TA [Zhifeng JIANG](zjiangaj@cse.
 
 ### 1. Install Maven
 
-If you have trouble installing `maven` in your Ubuntu machine, you can install it in a brainless way by executing the following command at the current directory; otherwise simply skip this tip.
+If you have trouble installing `maven` in your **Ubuntu** machine, you can install it in a brainless way by executing the following command at the current directory; otherwise simply skip this tip.
 
 ```bash
 source ./zhifeng_helps_me.sh install_maven
