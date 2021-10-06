@@ -30,11 +30,13 @@ install() {
 }
 
 uninstall() {
+    cwd=$(pwd)
     cd $HOME
     sudo rm -rf apache-maven-3.8.3
     sudo rm -rf jvm
     rm -rf maven
     echo You have successfully uninstalled.
+    cd $cwd
 }
 
 case "$1" in
